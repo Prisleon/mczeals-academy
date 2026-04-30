@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Student Login – McZeal Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="McZeal Academy"/><span>McZeal <strong>Academy</strong></span></a>
+    <ul class="nav-links">
+      <li><a href="courses.html">Courses</a></li><li><a href="webinars.html">Webinars</a></li>
+      <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><a href="courses.html" class="btn-primary">Explore Courses</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="courses.html">Courses</a><a href="webinars.html">Webinars</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="login-section">
+  <div class="container">
+    <div class="login-box">
+      <div class="login-logo">
+        <img src="logo.png" alt="McZeal Academy"/>
+        <span style="font-size:20px; font-weight:700; color:var(--navy);">McZeal <strong style="color:var(--blue);">Academy</strong></span>
+      </div>
+      <h2>Welcome Back</h2>
+      <p class="sub">Login to access your courses, assignments and live classes</p>
+      
+      <div class="login-tabs">
+        <button class="login-tab active">Student</button>
+        <button class="login-tab">Faculty</button>
+      </div>
+
+      <form onsubmit="handleLoginForm(event)">
+        <div class="form-group">
+          <label>Email / Student ID</label>
+          <input type="email" placeholder="Enter your email or student ID" required/>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required/>
+        </div>
+        <div class="forgot" style="margin-bottom:20px;">
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Login to Dashboard →</button>
+      </form>
+
+      <div class="login-divider">or</div>
+
+      <button onclick="showToast('🚧 Google login coming soon!')" class="btn-outline btn-full" style="margin-bottom:12px;">
+        🔵 Continue with Google
+      </button>
+
+      <div class="login-footer">
+        New to McZeal Academy? <a href="courses.html">Explore Programmes →</a>
+      </div>
+      
+      <div style="margin-top:24px; padding:16px; background:var(--blue-light); border-radius:10px; text-align:center;">
+        <p style="font-size:13px; color:var(--blue); font-weight:600;">🎓 Not enrolled yet?</p>
+        <p style="font-size:13px; color:var(--text-muted); margin:4px 0 12px;">Join 500+ learners transforming their careers with McZeal.</p>
+        <a href="courses.html" class="btn-sm">View All Programmes →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="main.js"></script>
+<script>
+function handleLoginForm(e) {
+  e.preventDefault();
+  showToast('🔐 Redirecting to your dashboard...');
+}
+</script>
+</body>
+</html>

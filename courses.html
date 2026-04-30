@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Courses & Programmes – McZeal Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="McZeal Academy"/><span>McZeal <strong>Academy</strong></span></a>
+    <ul class="nav-links">
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="webinars.html">Webinars</a></li>
+      <li><a href="internships.html">Internships</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-ghost">Login</a>
+      <a href="contact.html" class="btn-primary">Get Counselling</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="courses.html">Courses</a><a href="webinars.html">Webinars</a>
+    <a href="internships.html">Internships</a><a href="about.html">About</a>
+    <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    <a href="login.html" class="btn-ghost mt-8">Login</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Courses</span></div>
+    <h1>All Programmes</h1>
+    <p>Expert-led courses in technology, management & professional skills. Find the programme that transforms your career.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All Programmes</button>
+      <button class="filter-btn" data-filter="pg">PG Diploma</button>
+      <button class="filter-btn" data-filter="diploma">Diploma</button>
+      <button class="filter-btn" data-filter="cert">Certificate</button>
+      <button class="filter-btn" data-filter="coaching">Exam Coaching</button>
+    </div>
+    <div class="courses-grid" id="coursesGrid">
+      <div class="course-card" data-cat="pg">
+        <div class="course-badge">PG Diploma</div>
+        <div class="course-thumb thumb-blue"><span class="thumb-icon">💻</span></div>
+        <div class="course-body">
+          <h3>PG Diploma in Data Science & AI</h3>
+          <p>Master data science, machine learning and AI with hands-on projects guided by industry experts.</p>
+          <div class="course-meta"><span>⏱ 12 Months</span><span>📚 Live + Recorded</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹45,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="pg">
+        <div class="course-badge">PG Diploma</div>
+        <div class="course-thumb thumb-gold"><span class="thumb-icon">📊</span></div>
+        <div class="course-body">
+          <h3>PG Diploma in Business Analytics</h3>
+          <p>Gain expertise in data-driven business decisions, analytics tools and strategic management.</p>
+          <div class="course-meta"><span>⏱ 12 Months</span><span>📚 Live + Recorded</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹42,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="pg">
+        <div class="course-badge">PG Diploma</div>
+        <div class="course-thumb thumb-teal"><span class="thumb-icon">🏗️</span></div>
+        <div class="course-body">
+          <h3>PG Diploma in Project Management</h3>
+          <p>PMP-aligned curriculum covering Agile, Scrum, risk management and project leadership.</p>
+          <div class="course-meta"><span>⏱ 10 Months</span><span>📚 Live + Recorded</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹38,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="diploma">
+        <div class="course-badge diploma">Diploma</div>
+        <div class="course-thumb thumb-green"><span class="thumb-icon">🤖</span></div>
+        <div class="course-body">
+          <h3>Diploma in AI & Machine Learning</h3>
+          <p>Foundational to advanced AI concepts, neural networks, NLP and real-world applications.</p>
+          <div class="course-meta"><span>⏱ 8 Months</span><span>📚 Live + Recorded</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹32,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="diploma">
+        <div class="course-badge diploma">Diploma</div>
+        <div class="course-thumb thumb-purple"><span class="thumb-icon">🔒</span></div>
+        <div class="course-body">
+          <h3>Diploma in Cyber Security</h3>
+          <p>Ethical hacking, network security, threat analysis and incident response for modern IT environments.</p>
+          <div class="course-meta"><span>⏱ 8 Months</span><span>📚 Live Classes</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹28,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="cert">
+        <div class="course-badge cert">Certificate</div>
+        <div class="course-thumb thumb-teal"><span class="thumb-icon">🌐</span></div>
+        <div class="course-body">
+          <h3>Full Stack Web Development</h3>
+          <p>Build modern web applications using React, Node.js, databases and cloud deployment.</p>
+          <div class="course-meta"><span>⏱ 6 Months</span><span>📚 Live Classes</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹25,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="cert">
+        <div class="course-badge cert">Certificate</div>
+        <div class="course-thumb thumb-purple"><span class="thumb-icon">📱</span></div>
+        <div class="course-body">
+          <h3>Digital Marketing Professional</h3>
+          <p>Master SEO, social media, content marketing, PPC advertising and brand strategy.</p>
+          <div class="course-meta"><span>⏱ 4 Months</span><span>📚 Live + Recorded</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹18,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="cert">
+        <div class="course-badge cert">Certificate</div>
+        <div class="course-thumb thumb-gold"><span class="thumb-icon">☁️</span></div>
+        <div class="course-body">
+          <h3>Cloud Computing & DevOps</h3>
+          <p>AWS, Azure, Docker, Kubernetes and CI/CD pipelines for cloud-native development.</p>
+          <div class="course-meta"><span>⏱ 5 Months</span><span>📚 Live + Recorded</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹22,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="coaching">
+        <div class="course-badge coaching">Coaching</div>
+        <div class="course-thumb thumb-orange"><span class="thumb-icon">📝</span></div>
+        <div class="course-body">
+          <h3>UPSC / Civil Services Coaching</h3>
+          <p>Structured coaching with expert mentors, mock tests, and personalised study plans for UPSC.</p>
+          <div class="course-meta"><span>⏱ 12 Months</span><span>📚 Live Classes</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹30,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card" data-cat="coaching">
+        <div class="course-badge coaching">Coaching</div>
+        <div class="course-thumb thumb-blue"><span class="thumb-icon">🎯</span></div>
+        <div class="course-body">
+          <h3>Banking & SSC Exam Preparation</h3>
+          <p>Comprehensive coaching for IBPS, SBI PO, SSC CGL and other major competitive examinations.</p>
+          <div class="course-meta"><span>⏱ 8 Months</span><span>📚 Live Classes</span></div>
+          <div class="course-footer">
+            <div class="course-price">₹20,000 <small>/programme</small></div>
+            <a href="contact.html" class="btn-sm">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="edtech-banner">
+  <div class="container edtech-inner">
+    <div class="edtech-text">
+      <div class="section-tag light">Free Counselling</div>
+      <h2>Not Sure Which Programme<br/>Suits You Best?</h2>
+      <p>Our expert advisors will guide you to the perfect programme based on your goals, background and budget.</p>
+      <a href="contact.html" class="btn-gold btn-lg">Book Free Session →</a>
+    </div>
+    <div class="edtech-features">
+      <div class="ef-item">✅ Free 30-min consultation</div>
+      <div class="ef-item">✅ Career path guidance</div>
+      <div class="ef-item">✅ Scholarship information</div>
+      <div class="ef-item">✅ EMI / payment options</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="McZeal Academy" class="footer-logo"/>
+        <p>McZeal Academy – EdTech vertical of <strong>McZeal Global Services Pvt Ltd</strong>.</p>
+        <div class="footer-social">
+          <a href="#">in</a><a href="#">▶</a><a href="#">📸</a><a href="#">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Programmes</h4>
+        <a href="courses.html">PG Diploma</a><a href="courses.html">Diploma</a>
+        <a href="courses.html">Certificate Courses</a><a href="courses.html">Exam Coaching</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a><a href="internships.html">Internships</a>
+        <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 +91 78450 27408</p>
+        <p>✉ mczealstudy@gmail.com</p>
+        <p>📍 Nungambakkam, Chennai</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 McZeal Academy. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/917845027408" class="whatsapp-fab" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+<script src="main.js"></script>
+</body>
+</html>
